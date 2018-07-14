@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 
 const PlayerCard = ({color, symbol}) => {
+	const style = {
+		backgroundColor: color
+	}
 	return(
-		<div className="player-card">
+		<div style = {style} className="player-card">
 			{symbol}
 		</div>
 	)
